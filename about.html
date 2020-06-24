@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <title>Learnyuva-Igniting Young Minds</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="https://www.learnyuva.live/"><img src="logolearnyuva.png" width="20px" class="img-fluid rounded mx-auto d-block"
+        alt="Responsive image">Learnyuva</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/about.html">About Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Courses
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="https://www.learnyuva.live/lang">Foreign Languages</a>
+            <a class="dropdown-item" href="https://www.learnyuva.live/tech">Web & App Development</a>
+            <a class="dropdown-item" href="https://www.learnyuva.live/elec">IOT with Robotics</a>
+            <a class="dropdown-item" href="https://www.learnyuva.live/dm">Digital Marketing</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="https://www.learnyuva.live/users/register">Join Us</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact.html">Contact Us</a>
+        </li>
+      </ul>
+     
+      <div class="mx-2">
+        <button class="btn btn-danger" data-toggle="modal" data-target="#loginModal">Login</button>
+        <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal">Signup</button>
+      </div>
+    </div>
+  </nav>
+
+  <!--login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login to Learnyuva</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Signup Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Create your Learnyuva Account</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group">
+              <label for="cexampleInputPassword1">Confirm Password</label>
+              <input type="password" class="form-control" id="cexampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-primary">Create Account</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="container-fluid h-100 bg-light text-dark " style="padding: 25px">
+    <div class="row justify-content-center align-items-center">
+      <h1>About Us</h1>
+    </div>
+
+  <div class="container my-4">
+    <div class="row featurette d-flex justify-content-center align-items-center">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Our Story <span class="text-muted"></span>
+        </h2>
+        <p class="lead">Our name LearnYuva conveys our dedication to bring a healthy transition in the life of
+          the young and the curious. Our name defines our noble profession, "Learn" which means “to gain
+          knowledge” and "Yuva" symbolizing “the youth”. LearnYuva is here to boost the thinking capacity of
+          young and brilliant minds by building an indivisible bond between knowledge and youth through live
+          and interactive sessions.</p>
+      </div>
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+          height="500" src="a.jpg" alt="">
+
+      </div>
+    </div>
+    <div class="row featurette d-flex justify-content-center align-items-center">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Our Vision <span class="text-muted"></span>
+        </h2>
+        <p class="lead">We, at LearnYuva, strive to provide students with an environment conducive to innovation
+          and learning with dedicated faculties to help students realize their potential. From the portals at
+          LearnYuva, we intend to send forth sensible and socially conscious individuals who shall be the
+          instruments of positive change and peace in this strife-stricken world.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+          height="500" src="c.jpg" alt="">
+
+      </div>
+    </div>
+    <div class="row featurette d-flex justify-content-center align-items-center">
+      <div class="col-md-7 order-md-1">
+        <h2 class="featurette-heading">Our Goal <span class="text-muted"></span>
+        </h2>
+        <p class="lead">We aim to reach each and every student who is struggling to learn through conventional
+          methods by equipping them with a massive range of technical and non-technical courses like app
+          development, foreign languages, robotics, etc. with insightful learning experiences thus ensuring
+          their all-round development.Our team is clear on its goal and comprises of like-minded individuals who believe
+          in educating for a better tomorrow. </p>
+      </div>
+      <div class="col-md-5 order-md-2">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+          height="500" src="3.webp" alt="">
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer">
+    <div class="footer">
+      <div class="bottom-container ">
+        <div class="container my-auto">
+          <div class="row">
+            <div class="col-12 my-auto">
+              <h4 class="text-center">FOLLOW US ON </h4>
+              <div class="social text-center my-4">
+                <a class="footer-link" href="https://www.facebook.com/learnyuva"><img src="f.png" height="40px"
+                    width="40px"></a>
+                <a class="footer-link" href="https://www.instagram.com/learnyuva"><img src="insta.jpg" height="40px"
+                    width="40px"></a>
+                <a class="footer-link" href="https://www.linkedin.com/company/learnyuva/"><img src="l.png" height="40px"
+                    width="40px"></a>
+              </div>
+              <br>
+            </div>
+            <div class="col-12">
+              <div class="my-auto">
+                <h6 class="text-center">© 2020 LearnYuva All rights reserved.</h6>
+                <h6 class="text-center"> Made with ❤</h6>
+                <h6 class="text-right"><a href="#">Back to top</a></h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
